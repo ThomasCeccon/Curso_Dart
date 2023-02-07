@@ -1,39 +1,36 @@
 import 'dart:io';
 
 //calcular a soma de dois numeros
-calculoSoma(){
-   //declaracao das variaveis
-  var soma;
-  var input_num1;
-  var num1;
-  var input_num2;
-  var num2;
+calculoSoma() {
+  //declaracao das variaveis
+  double soma;
+  double num1;
+  double num2;
+  var input_text;
 
   //entrada de dados
   print("Entre com o primeiro numero:");
-  input_num1=stdin.readLineSync();
-  num1=double.parse(input_num1);
+  input_text = stdin.readLineSync();
+  num1 = double.parse(input_text);
 
   print("Entre com o segundo numero:");
-  input_num2=stdin.readLineSync();
-  num2=double.parse(input_num2);
+  input_text = stdin.readLineSync();
+  num2 = double.parse(input_text);
 
-  //processamento 
-  soma=num1+num2;
+  //processamento
+  soma = num1 + num2;
 
- //chamada por parametro
- imprimirValor(soma);
- 
+  //chamada por parametro
+  imprimirValor(soma);
 }
 
 //funcao imprimir valor
-imprimirValor(soma){
+imprimirValor(soma) {
   //saida de dados
   print("Soma:$soma");
+
 }
 
-main(){
- 
-calculoSoma();
-
+main() {
+  calculoSoma();
 }

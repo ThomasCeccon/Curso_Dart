@@ -1,5 +1,5 @@
 main(){
-
+//declaracao das variaveis
   var isTrue=true;
 
   if(isTrue){
@@ -14,19 +14,20 @@ main(){
   var num2=3;
 
   if(num1>num2){
-    print("mentira");
-  }
-  else{
     print("Verdade");
   }
+  else{
+    print("Mentira");
+  }
+
 //Outro exemplo ==
   var num3=3;
   var num4=3;
 
   if(num3==num4){
-    print("VERDADE");
+    print("Verdade");
   }
   else{
-    print("MENTIRA");
+    print("Mentira");
   }
 }

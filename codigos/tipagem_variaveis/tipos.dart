@@ -2,26 +2,23 @@ import 'dart:io';
 
 main(){
   //declaracao das variaveis
-  String nome='Thomas';
-  var input_nome;
+  String nome;
   int idade;
-  var input_idade;
+  var input_text;
 
   //entrada de dados 
   print("Coloque seu nome");
-  input_nome=stdin.readLineSync();
+  input_text=stdin.readLineSync();
+  nome=input_text;
 
   print("Coloque sua idade");
-  input_idade=stdin.readLineSync();
-  idade=int.parse(input_idade);
+  input_text=stdin.readLineSync();
+  idade=int.parse(input_text);
 
-  //processamento 
   
-
   //saida de dados 
-  print(nome);
   print("=========================================");
-  print("Seu nome é $input_nome e tem $idade anos.");
+  print("Seu nome é $nome e tem $idade anos.");
 
 
 }

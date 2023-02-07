@@ -1,8 +1,10 @@
+import 'dart:ffi';
+
 main(){
 
-  var texto1="Oi";
-  var texto2="Tudo bem!";
-  var total=texto1+texto2;
-
+  String texto1="Oi";
+  String texto2="Tudo bem!";
+  String total=texto1+texto2;
+  
   print(total);
-}
+}  

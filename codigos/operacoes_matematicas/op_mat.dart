@@ -1,4 +1,4 @@
-import 'dart:ffi';
+import 'dart:io';
 
 main() {
   double num1 = 1.7;
@@ -7,5 +7,5 @@ main() {
 
   total = num1 + num2;
 
-  print(total);
+print("A soma é de $total");
 }

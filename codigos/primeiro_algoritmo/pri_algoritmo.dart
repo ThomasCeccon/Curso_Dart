@@ -1,14 +1,12 @@
 main() {
-//pergunta a idade da pessoa
+  //declaracao das variaveis
   int idade;
   idade = 18;
 
-//maior de idade
+  //estrutura de decisao
   if (idade >= 18) {
     print("Maior de idade!");
   }
-
-//menor de idade
   else {
     print("Menor de idade!");
   }

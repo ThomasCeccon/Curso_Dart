@@ -1,21 +1,14 @@
 import 'dart:io';
 
-main(){
-
+main() {
   //declaracao das variaveis
-   String texto="ola";
-   int i=0;
+  String texto = "Ola";
 
-  //entradade de dados 
-
+  //entradade de dados
 
   //processamento
-for(int i=1;i<=10;i++){
-  print("$texto rodou $i vezes");
-}
-  //saida de dados 
-
-
-
-
+  for (int i = 1; i <= 10; i++) {
+    print("$texto rodou $i vezes");
+  }
+  //saida de dados
 }

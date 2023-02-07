@@ -1,24 +1,22 @@
-import 'dart:ffi';
 import 'dart:io';
 import 'dart:math';
 
 main(){
   //declaracao das variaveis
    var peso;
-   var altura;
-   var IMC;
+   double altura;
+   double IMC;
+   var input_text;
 
- //entrada de dados peso
+ //entrada de dados 
   print("Digite seu peso");
-  var input_peso;//texto peso
-  input_peso=stdin.readLineSync();//entrada do peso tipo texto
-  peso=int.parse(input_peso);//entrada do peso tipo double
+  input_text=stdin.readLineSync();//entrada do peso tipo texto
+  peso=int.parse(input_text);//entrada do peso tipo double
   
   //entrada de dados altura
   print("Digite sua altura");
-  var input_altura;//texto altura
-  input_altura=stdin.readLineSync();//entrada da altura tipo texto
-  altura=double.parse(input_altura);//entrada da altura (tipo double)
+  input_text=stdin.readLineSync();//entrada da altura tipo texto
+  altura=double.parse(input_text);//entrada da altura (tipo double)
   
   //processamento
   IMC=peso/pow(altura,2);
