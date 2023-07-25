@@ -1,26 +1,21 @@
 import 'dart:io';
-main(){
+main() {
 //declaracao das variaveis
-List<String> nome = [];
-var input_texto; 
-bool condicao=true;
+  List<String> nome = [];//lista do tipo string
+  var input_text;
+  bool condicao = true;
 
-while(condicao){
-  print("digite seu nome");
-  input_texto=stdin.readLineSync();
-  
-  if(input_texto=="sair"){
-    condicao=false;
-    print("Programa finalizado");
+  while (condicao) {
+    print("digite seu nome");
+    input_text = stdin.readLineSync();
+
+    if (input_text == "sair") {
+      condicao = false;
+      print("Programa finalizado");
+    } 
+    else {
+      nome.add(input_text);//adicionando os nomes na lista
+    }
+    print(nome);
   }
-  else{
-    nome.add(input_texto);
-  }
-  print(nome);
-  
-}
-
-
-
-
 }

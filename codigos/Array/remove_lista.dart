@@ -1,26 +1,33 @@
 import 'dart:io';
 
-main(){
+main() {
   //declaracao das variaveis
-    List<String> nome =[];
-    var input_texto;
-  
+  List<String> nomes = [];
+  var input_text;
+  int num;
+  bool condicao = true;
+
   //entrada de dados
-  print("Entre com seu nome");
-   input_texto=stdin.readLineSync();
+  while (condicao) {
+    print("Entre com seu nome");
+    input_text = stdin.readLineSync();
 
-  //processamento
-  //removendo item da lista pelo nome
-  nome.remove("tho");//tho
-  print(nome);
+    if (input_text == "sair") {
+      condicao = false;
+      print("Sair do programa");
+    } else if (input_text == "remove") {
+      print("qual nome voce deseja remover");
+      for (int i = 0; i < nomes.length; i++) {
+        print("Nomes $i - ${nomes[i]}");
+      }
+      input_text = stdin.readLineSync();
+      num = int.parse(input_text);
+      nomes.removeAt(num);
+      print("$num removido");
+    } else {
+      nomes.add(input_text);
+    }
 
-
-  //removendo item da lista pela posicao
-  //nome.removeAt(2);//Tho
- // print(nome);
-  
-
-
-  
-
+    print(nomes);
+  }
 }

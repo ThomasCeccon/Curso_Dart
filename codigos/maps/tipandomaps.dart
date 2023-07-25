@@ -2,7 +2,6 @@ import 'dart:io';
 
 main() {
   Map<String,dynamic> maps={
-    
     'nome':'thomas',
     'idade':'19',
     'cep':'37-570-000',
